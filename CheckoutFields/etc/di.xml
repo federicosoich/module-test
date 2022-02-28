@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="chupaprecios_save_delivery_instructions_in_quote" type="ChupaPrecios\CheckoutFields\Plugin\Checkout\Model\ShippingInformationManagement" sortOrder="1"/>
+    </type>
+    <preference for="Magento\Sales\Model\Order" type="ChupaPrecios\CheckoutFields\Model\Order"/>
+</config>
